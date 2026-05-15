@@ -102,9 +102,13 @@ form {
     max-width: 100%;
     box-sizing: border-box;
 
+    & input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
     & button {
-      width: 100%; /* botão ocupa largura toda */
-      border-radius: 30px;
+      width: 100%;
     }
   }
 
@@ -115,23 +119,64 @@ form {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 360px) {
   .container {
-    padding-top: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    min-height: 100vh;
+    padding-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   form {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 16px;
-    gap: 16px;
-    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+
+    & input {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    & button {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    padding-top: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  form {
+    padding: 14px;
+    gap: 14px;
+
+    & input {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 13px;
+      height: 36px;
+    }
+
+    & button {
+      width: 100%;
+      font-size: 12px;
+      height: 36px;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .user-card {
+    padding: 8px 10px;
   }
 }
