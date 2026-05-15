@@ -1,16 +1,52 @@
-# React + Vite
+# Devclub - Cadastro de Usuários
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web para cadastro, listagem e exclusão de usuários, desenvolvida com React e Vite.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- Axios
 
-## React Compiler
+## Instalação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/devclub-cadastro-de-usuarios.git
 
-## Expanding the ESLint configuration
+# Entre na pasta
+cd devclub-cadastro-de-usuarios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Instale as dependências
+npm install
+```
+
+## Configuração
+
+Certifique-se de que o backend está rodando em `http://localhost:3000`.
+
+O arquivo `src/services/api.js` já está configurado com a baseURL correta:
+
+```js
+const api = axios.create({
+  baseURL: "http://localhost:3000",
+});
+```
+
+## Rodando o projeto
+
+```bash
+npm run dev
+```
+
+O projeto vai rodar em `http://localhost:5173`.
+
+## Funcionalidades
+
+- Listar usuários cadastrados
+- Cadastrar novo usuário (nome, idade e email)
+- Excluir usuário
+
+## Observação
+
+O backend precisa estar rodando para o frontend funcionar. Veja o repositório da API para instruções.
