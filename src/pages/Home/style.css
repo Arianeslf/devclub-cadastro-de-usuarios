@@ -87,3 +87,23 @@ form {
     opacity: 0.8;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .user-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+}
