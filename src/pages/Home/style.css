@@ -93,12 +93,19 @@ form {
     padding-top: 40px;
     padding-left: 16px;
     padding-right: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   form {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+
+    & button {
+      width: 100%; /* botão ocupa largura toda */
+      border-radius: 30px;
+    }
   }
 
   .user-card {
