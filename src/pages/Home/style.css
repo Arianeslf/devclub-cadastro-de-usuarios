@@ -107,3 +107,36 @@ form {
     margin: 10px 0;
   }
 }
+
+@media (max-width: 300px) {
+  .container {
+    padding-top: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .user-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 6px 0;
+    padding: 8px 12px;
+  }
+
+  .user-card & div p {
+    font-size: 13px;
+  }
+}
