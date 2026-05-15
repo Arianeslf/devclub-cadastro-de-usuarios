@@ -115,6 +115,8 @@ form {
     padding-right: 8px;
     width: 100%;
     box-sizing: border-box;
+    justify-content: center;
+    min-height: 100vh;
   }
 
   form {
@@ -123,20 +125,5 @@ form {
     box-sizing: border-box;
     padding: 16px;
     gap: 16px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .user-card {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 6px 0;
-    padding: 8px 12px;
-  }
-
-  .user-card & div p {
-    font-size: 13px;
-  }
-}
+    margin: 0 auto;
+  } }
